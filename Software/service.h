@@ -19,6 +19,9 @@ private:
     std::map<std::string, int> loadVotes(const std::string& filename);
     void saveVotes(const std::map<std::string, int>& votes, const std::string& filename);
 
+    void saveOrder(const std::string& user, const std::string& sandwich);
+    std::map<std::string, std::vector<std::string>> loadOrders();
+
     void subscriberThread();
     void subscriberThreadListen();
     void pusherThread();
